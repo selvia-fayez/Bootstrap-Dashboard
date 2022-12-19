@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navlist"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navlist">
+          <ul class="navbar-nav">
+            <div class="navbar-brand"><span>Blogen</span></div>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Dashboard</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Posts</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Categories</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Users</a></li>
+          </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#listitem"
+                data-bs-toggle="dropdown"
+              >
+                <i class="fa-solid fa-user"></i> Welcome Brad
+              </a>
+              <ul class="dropdown-menu" id="list-item">
+                <li><a class="dropdown-item" href="#">Action 1</a></li>
+                <li><a class="dropdown-item" href="#">Action 2</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="fa-solid fa-user-xmark"></i> Logout</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <nav class="navbar bg-primary">
+      <div class="container">
+        <h1 class="text-white"><i class="fa-solid fa-gear"></i> Dashboard</h1>
+      </div>
+    </nav>
+    <div class="d-flex justify-content-center">
+      <div class="container row m-4 gap-2">
+        <a href="addPost.html" class="btn btn-primary col">
+          <i class="fa-solid fa-add"></i> Add Post
+        </a>
+
+        <a class="btn btn-success col">
+          <i class="fa-solid fa-add"></i> Add Category
+        </a>
+        <a class="btn btn-warning col">
+          <i class="fa-solid fa-add"></i> Add User
+        </a>
+      </div>
+    </div>
+    <div class="container mt-4">
+      <div class="table-responsive">
+        <table class="table table-hover table-striped border">
+          <thead class="bg-light">
+            <th class="p-3" colspan="5">Latest Posts</th>
+          </thead>
+          <thead class="bg-dark text-light" colspan="5">
+            <th scope="col">#</th>
+            <th scope="col">Title</th>
+            <th scope="col">Category</th>
+            <th scope="col">Date</th>
+            <th></th>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row">1</td>
+              <td>Post One</td>
+              <td>Web Development</td>
+              <td>May 10 2018</td>
+              <td>
+                <button class="btn btn-secondary">
+                  <i class="fa-solid fa-angles-right"></i> Details
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">2</td>
+              <td>Post Two</td>
+              <td>Tech Gadgets</td>
+              <td>May 11 2018</td>
+              <td>
+                <button class="btn btn-secondary">
+                  <i class="fa-solid fa-angles-right"></i> Details
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">3</td>
+              <td>Post Three</td>
+              <td>Web Development</td>
+              <td>May 13 2018</td>
+              <td>
+                <button class="btn btn-secondary">
+                  <i class="fa-solid fa-angles-right"></i> Details
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">4</td>
+              <td>Post Four</td>
+              <td>Business</td>
+              <td>May 15 2018</td>
+              <td>
+                <button class="btn btn-secondary">
+                  <i class="fa-solid fa-angles-right"></i> Details
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">5</td>
+              <td>Post Five</td>
+              <td>Web Development</td>
+              <td>May 17 2018</td>
+              <td>
+                <button class="btn btn-secondary">
+                  <i class="fa-solid fa-angles-right"></i> Details
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">6</td>
+              <td>Post Six</td>
+              <td>Health & Wellness</td>
+              <td>May 20 2018</td>
+              <td>
+                <button class="btn btn-secondary">
+                  <i class="fa-solid fa-angles-right"></i> Details
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <footer class="container-fluid bg-dark mt-5">
+      <div class="text-center p-5">
+        <h5 class="text-white">Copyright 2022 Blogen</h5>
+      </div>
+    </footer>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

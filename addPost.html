@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Post</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navlist"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navlist">
+          <ul class="navbar-nav">
+            <div class="navbar-brand"><span>Blogen</span></div>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Dashboard</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Posts</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Categories</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Users</a></li>
+          </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#listitem"
+                data-bs-toggle="dropdown"
+              >
+                <i class="fa-solid fa-user"></i> Welcome Brad
+              </a>
+              <ul class="dropdown-menu" id="list-item">
+                <li><a class="dropdown-item" href="#">Action 1</a></li>
+                <li><a class="dropdown-item" href="#">Action 2</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="fa-solid fa-user-xmark"></i> Logout</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <nav class="navbar bg-primary">
+      <div class="container">
+        <h1 class="text-white"><i class="fa-solid fa-gear"></i> Add Post</h1>
+      </div>
+    </nav>
+    <div class="container mt-4">
+      <form class="border-bottom">
+        <div class="m-3">
+          <label class="form-label fs-5" for="title">Title</label>
+          <input type="text" class="form-control" id="title" />
+        </div>
+        <div class="m-3">
+          <label class="form-label fs-5" for="category">Category</label>
+          <select class="form-select">
+            <option>Web Development</option>
+            <option>Tech Gadgets</option>
+            <option>Business</option>
+            <option>Health & Wellness</option>
+          </select>
+        </div>
+        <div class="m-3">
+          <label class="form-label fs-5" for="image">Upload Image</label>
+          <div class="input-group">
+            <input type="file" id="image" class="form-control" />
+            <label for="image" class="input-group-text">Browse</label>
+          </div>
+          <small class="text-secondary">Max Size 3mb</small>
+        </div>
+        <div class="m-3 mb-5">
+          <label class="form-label fs-5">Body</label>
+          <textarea name="editorexample" class="form-control w-100"></textarea>
+        </div>
+      </form>
+      <div class="d-flex flex-row-reverse m-3">
+        <button class="btn btn-info text-white">Save Changes</button>
+      </div>
+    </div>
+    <footer class="container-fluid bg-dark mt-5">
+      <div class="text-center p-5">
+        <h5 class="text-white">Copyright 2022 Blogen</h5>
+      </div>
+    </footer>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="https://cdn.ckeditor.com/4.9.2/standard/ckeditor.js"></script>
+    <script>
+      CKEDITOR.replace("editorexample");
+    </script>
+  </body>
+</html>
